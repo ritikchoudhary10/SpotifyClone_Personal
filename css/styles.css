@@ -1,0 +1,162 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nav bar */
+nav ul{
+    display: flex;
+    position:sticky;
+    top: 0;
+    align-items: center;
+    list-style: none;
+    height :8vh;
+    color: white;
+    background-color: black;
+    
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 40px;
+
+}
+.brand img{
+    width:30px;
+}
+nav ul li span{
+    margin-left: 5px;
+}
+nav ul li{
+    margin: 0 10px;
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 80vw;
+    height: 55vh;
+    margin-top: 10px ;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    padding: 20px;
+    background-image: url('../images/bg.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+.songItem{
+    height: 5vh;
+    display: flex;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px;
+
+}
+
+.songItem img{
+    width: 28px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.timestamp{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 23px;
+}
+.songName{
+    font-size:70%;
+}
+.icons{
+    margin-top: 15px;
+}
+.timestamp i{
+    cursor:pointer ;
+}
+.songItemContainer{
+    margin-top: 34px;
+}
+
+
+
+
+
+
+
+
+
+
+.bottom{
+    position: sticky;
+    height: 14vh;
+    background-color: black;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+#myProgressBar{
+    width: 80vw;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.icons{
+    color: white;
+    margin-top: 14px 0;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.songInfo{
+    position:absolute ;
+    left: 10vw;
+    top: 25px;
+    color: white;
+}
+.songInfo img{
+    opacity: 0;
+    transition:opacity 0.4s ease-in;
+}
+#masterSongName{
+    font-size: 60%;
+}
+
+
+
+
+
+
+/* masterPlay.addEventListener('click',()=>{
+    if(audioElement.paused || audioElement.currentTime<=0){
+        audioElement.play();
+        masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
+        
+        
+      
+        gif.style.opacity=1;
+    }else{
+        audioElement.pause();
+        masterPlay.classList.add('fa-play-circle');
+        masterPlay.classList.remove('fa-pause-circle');
+        gif.style.opacity=0;
+       
+    }
+    
+}) */
