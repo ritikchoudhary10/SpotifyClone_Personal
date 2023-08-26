@@ -2,7 +2,7 @@
 
 body {
     background-color: antiquewhite;
-    
+    font-size: large;
     overflow-y: hidden;
     font-family: 'Inconsolata', monospace;
 }
