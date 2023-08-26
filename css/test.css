@@ -25,9 +25,10 @@ nav ul {
     top: 0;
     align-items: center;
     list-style: none;
-    height: 8vh;
+    height: 60px;
     color: white;
     background-color: black;
+    font-size: larger;
 }
 
 .brand {
@@ -55,16 +56,24 @@ nav ul li {
     color: white;
     display: flex;
     width: 80vw;
-    height: 69vh;
-    margin-top: 3.75rem;
-    margin-right: auto;
-    margin-left: auto;
+    height: auto;
+    margin:auto auto;
+    position: fixed;
+    top: 40px;
     border-radius: 0.9375rem;
     padding: 1.25rem;
     background-image: url('../images/bg.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     overflow-y: scroll;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+        height: 60vh;
+        margin-top: 3.75rem;
+        padding: 1rem;
+    }
 }
 .container ::-webkit-scrollbar{
     width: 0;
@@ -120,11 +129,12 @@ nav ul li {
 }
 
 .bottom {
-    position: sticky;
+    position: fixed;
     height: 16vh;
     background-color: black;
     bottom: 0;
     display: flex;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
