@@ -146,7 +146,8 @@ nav ul li {
 }
 
 .songInfo {
-    
+    position: absolute;
+    left: 25px;
     color: white;
 }
 
