@@ -1,162 +1,161 @@
-html{
-    font-size: 16px;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+body {
+    background-color: antiquewhite;
+    font-size: 16px; /* Set the base font size for rem conversions */
+    overflow-y: hidden;
+    font-family: 'Inconsolata', monospace;
 }
 
-body{
-    background-color: antiquewhite;
-}
-*{
+* {
     margin: 0;
     padding: 0;
 }
-/* nav bar */
-nav ul{
+.superior{
     display: flex;
-    position:sticky;
+    flex-direction: column;
+    
+}
+
+/* nav bar */
+nav ul {
+    display: flex;
+    position: fixed;
+    width: 100vw;
     top: 0;
     align-items: center;
     list-style: none;
-    height :8vh;
+    height: 40px;
     color: white;
     background-color: black;
-    
 }
-.brand{
+
+.brand {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 40px;
+    margin: 2.5rem 2.5rem;
+}
 
+.brand img {
+    width: 1.875rem;
 }
-.brand img{
-    width:30px;
+
+nav ul li span {
+    margin-left: 0.3125rem;
 }
-nav ul li span{
-    margin-left: 5px;
+
+nav ul li {
+    margin: 0 0.625rem;
 }
-nav ul li{
-    margin: 0 10px;
-}
-.container{
-    min-height: 70vh;
+
+.container {
+   
     background-color: black;
     color: white;
     display: flex;
     width: 80vw;
-    height: 55vh;
-    margin-top: 10px ;
+    height: 69vh;
+    margin-top: 3.75rem;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 0.9375rem;
+    padding: 1.25rem;
     background-image: url('../images/bg.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     overflow-y: scroll;
 }
-.songItem{
+.container ::-webkit-scrollbar{
+    width: 0;
+}
+.songList h1{
+    text-align: center;
+}
+
+.songItem {
     height: 5vh;
     display: flex;
     background-color: white;
     color: black;
-    border-radius: 50px;
-    margin: 10px 0;
+    border-radius: 2.5rem;
+    margin-bottom: 0.625rem;
     align-items: center;
     justify-content: space-between;
-    padding:0 10px;
-
+    padding: 0 0.625rem;
 }
 
-.songItem img{
-    width: 28px;
-    margin: 0 23px;
-    border-radius: 34px;
+.songItem img {
+    width: 1.75rem;
+    margin: 0 1.4375rem;
+    border-radius: 2.125rem;
 }
-.timestamp{
+
+.timestamp {
     display: flex;
     justify-content: space-between;
-    margin: 0 23px;
-}
-.songName{
-    font-size:70%;
-}
-.icons{
-    margin-top: 15px;
-}
-.timestamp i{
-    cursor:pointer ;
-}
-.songItemContainer{
-    margin-top: 34px;
+    margin: 0 1.4375rem;
 }
 
+.songName {
+    font-size: 80%;
+    display: inline-block;
+    width: 70%;;
+    display: block;
+    text-align: left;
+   
+}
 
+.icons {
+    margin: 0.875rem 0;
+}
 
+.timestamp i {
+    cursor: pointer;
+}
 
+.songItemContainer {
+    margin-top: 2.125rem;
+    padding-bottom: 1.5rem;
+}
 
-
-
-
-
-
-.bottom{
+.bottom {
     position: sticky;
-    height: 14vh;
+    height: 16vh;
     background-color: black;
-    bottom:0;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-
+    box-sizing: border-box;
+    border-top: 0.5rem solid antiquewhite;
 }
-#myProgressBar{
-    width: 80vw;
-    margin-top: 20px;
-    cursor: pointer;
 
-}
-.icons{
-    color: white;
-    margin-top: 14px 0;
-    padding-bottom: 10px;
+#myProgressBar {
+    width: 90%;
+    margin-top: 1.25rem;
     cursor: pointer;
 }
-.songInfo{
-    position:absolute ;
-    left: 10vw;
-    top: 25px;
+
+.icons {
+    color: white;
+    margin-top: 0.875rem;
+    padding-bottom: 0.625rem;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 25px;
     color: white;
 }
-.songInfo img{
+
+.songInfo img {
     opacity: 0;
-    transition:opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in;
 }
-#masterSongName{
+
+#masterSongName {
     font-size: 60%;
 }
-
-
-
-
-
-
-/* masterPlay.addEventListener('click',()=>{
-    if(audioElement.paused || audioElement.currentTime<=0){
-        audioElement.play();
-        masterPlay.classList.remove('fa-play-circle');
-        masterPlay.classList.add('fa-pause-circle');
-        
-        
-      
-        gif.style.opacity=1;
-    }else{
-        audioElement.pause();
-        masterPlay.classList.add('fa-play-circle');
-        masterPlay.classList.remove('fa-pause-circle');
-        gif.style.opacity=0;
-       
-    }
-    
-}) */
