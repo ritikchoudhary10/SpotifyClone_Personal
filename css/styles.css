@@ -159,3 +159,12 @@ nav ul li {
 #masterSongName {
     font-size: 60%;
 }
+
+@media screen and (max-width:450px){
+    .songInfo {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        color: white;
+    }
+}
